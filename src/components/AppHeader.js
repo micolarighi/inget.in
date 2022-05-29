@@ -25,7 +25,7 @@ function AppHeader() {
     <div className='lg:ml-20 md:ml-4 ml-0 pt-10 mb-3'>
       <div className='flex items-center '>
         <Button type={'button'} onClick={() => setModalOpen(true)}>ADD TASK
-          <FontAwesomeIcon className='text-md lg:text-xl items-center pl-3' icon={faCirclePlus} />
+          <FontAwesomeIcon className='text-xs pl-1  lg:text-xl items-center' icon={faCirclePlus} />
         </Button>
         <SelectButton
           id="status"
