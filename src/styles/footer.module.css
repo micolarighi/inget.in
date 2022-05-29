@@ -8,11 +8,13 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgb(41, 41, 41);
-  color: white;
+  background-color: #fff;
+  color: black;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
   text-align: center;
   margin: 0;
-  padding: 10px 0;
+  padding: 20px 0;
   font-family: 'Poppins', sans-serif;
 }
 
