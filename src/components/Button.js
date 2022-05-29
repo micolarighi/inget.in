@@ -11,7 +11,7 @@ function Button({ children, type, ...rest }) {
 
 function SelectButton({ children, ...rest }) {
   return (
-    <select className="px-4 py-4 text-sm shadow-md shadow-gray-700 font-medium text-white bg-gray-900 rounded-lg outline-none ml-4">
+    <select className="px-4 hover:opacity-90 py-4 text-sm shadow-md shadow-gray-700 font-medium text-white bg-gray-900 rounded-lg outline-none ml-4">
       <option value="all" selected>All</option>
       <option value="incomplete">Incomplete</option>
       <option value="complete">Complete</option>
