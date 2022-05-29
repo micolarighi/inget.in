@@ -52,16 +52,19 @@
   font-weight: 600;
   margin-bottom: 2rem;
   text-transform: capitalize;
+  text-align: start !important;
 }
 
 .form {
   width: 100%;
+  text-align: start !important;
 
 }
 
 .form label {
   font-size: 1.4444rem;
   color: var(--black-1);
+  text-align: start !important;
 
 }
 
