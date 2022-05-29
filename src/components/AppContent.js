@@ -15,7 +15,7 @@ const container = {
     transition: {
       duration: 1,
       staggerChildren: 1,
-    },
+    }, 
   },
 };
 const child = {
