@@ -5,7 +5,7 @@ import { faChevronCircleDown } from '@fortawesome/free-solid-svg-icons'
 
 function ButtonSecondary({ children, type, ...rest }) {
   return (
-    <button type={type === 'submit' ? 'submit' : 'button'} class="text-purple-800 bg-purple-200  focus:ring-4 focus:outline-none focus:ring-purple-300 shadow-lg font-medium rounded-md text-sm px-5 py-4 text-center duration-300 ease-in-out hover:opacity-80" {...rest}>{children}</button>
+    <button type={type === 'submit' ? 'submit' : 'button'} className="text-purple-800 bg-purple-200  focus:ring-4 focus:outline-none focus:ring-purple-300 shadow-lg font-medium rounded-md text-sm px-5 py-4 text-center duration-300 ease-in-out hover:opacity-80" {...rest}>{children}</button>
   )
 }
 
