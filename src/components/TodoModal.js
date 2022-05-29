@@ -21,7 +21,7 @@ const dropIn = {
     transform: 'scale(1)',
     opacity: 1,
     transition: {
-      duration: 0.4,
+      duration: 0.2,
       type: 'spring',
       damping: 25,
       stiffness: 500,
