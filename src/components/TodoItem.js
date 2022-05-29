@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import styles from '../styles/todoItem.module.css'
 import { getClasses } from '../utils/getClasses'
-import { format } from 'date-fns'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrash, faSquarePen } from '@fortawesome/free-solid-svg-icons'
 import { useDispatch } from 'react-redux'
@@ -52,7 +51,7 @@ function TodoItem({ todo }) {
           <CheckButton checked={checked} handleCheck={handleCheck} />
           <div className={styles.texts}>
             <p className={getClasses([styles.todoText, todo.status === 'complete' && styles['todoText--completed']])}>{todo.title}</p>
-            <p className={styles.time}>{format(new Date(todo.time), 'p, MM/dd/yyyy')}</p>
+            <p className={styles.time}>{todo.time}</p>
           </div>
         </div>
         <div className={styles.todoActions}>
