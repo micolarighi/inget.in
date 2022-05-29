@@ -20,12 +20,18 @@ const dropIn = {
   visible: {
     transform: 'scale(1)',
     opacity: 1,
+    type: 'spring',
+    damping: 25,
+    stiffness: 500,
     transition: {
-      duration: 0.3,
+      duration: 0.2,
     },
   },
   exit: {
     transform: 'scale(0.9)',
+    transition: {
+      duration: 0.2
+    },
     opacity: 0,
   },
 };
