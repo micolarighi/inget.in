@@ -102,7 +102,7 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
                 </select>
               </label>
               <div className={styles.buttonContainer}>
-                <Button type='submit'> {type === 'add' ? 'Add Mido' : 'Update'}</Button>
+                <Button> {type === 'add' ? 'Add Mido' : 'Update'}</Button>
                 <SecondaryButton onClick={() => setModalOpen(false)} onKeyDown={() => setModalOpen(false)}>Cancel</SecondaryButton>
               </div>
             </form>
