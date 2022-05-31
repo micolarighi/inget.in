@@ -13,7 +13,7 @@ function Footer() {
         Made with
         <FontAwesomeIcon icon={faHeart} className={styles.icon} />
         by
-        <strong className='ml-1 text-purple-500'> Micola Arighi Dwitya</strong>
+        <strong className='ml-1 text-purple-500'> Second Group</strong>
       </p>
     </div>
   )
