@@ -44,7 +44,7 @@ function AppContent() {
   });
 
   return (
-    <motion.div className='lg:px-3 lg:py-4 px-2 py-3 rounded-md text-xl text-center text-slate-800 mt-10 mb-10 container bg-blue-300' variants={container} initial='hidden' animate="visible">
+    <motion.div className='lg:px-3 lg:py-4 px-2 py-3 rounded-md text-xl text-center text-slate-800 mt-10 mb-10 container bg-blue-100' variants={container} initial='hidden' animate="visible">
       <AnimatePresence>
         {filteredTodoList && filteredTodoList.length > 0 ? (
           filteredTodoList.map((todo) => <TodoItem key={todo.id} todo={todo} />)
