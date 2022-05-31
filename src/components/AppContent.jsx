@@ -49,7 +49,7 @@ function AppContent() {
         {filteredTodoList && filteredTodoList.length > 0 ? (
           filteredTodoList.map((todo) => <TodoItem key={todo.id} todo={todo} />)
         ) : <motion.p variants={child} className={styles.emptyText}>
-          Oops! There is no <strong className='text-green-500'>Mido</strong> found, trying add one?
+          Oops! There is no <strong className='font-bold'>Inget.in</strong> found, trying add one?
         </motion.p>}
       </AnimatePresence>
     </motion.div>
