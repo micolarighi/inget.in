@@ -54,7 +54,7 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (title === '') {
-      toast.error('Please enter a Mido name');
+      toast.error('Please enter something for us to inget.in');
       return;
     }
     if (title && status) {
@@ -67,12 +67,12 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
             time: new Date().toLocaleString(),
           })
         );
-        toast.success('Task added successfully');
+        toast.success('Inget.in sucessfully created');
       }
       if (type === 'update') {
         if (todo.title !== title || todo.status !== status) {
           dispatch(updateTodo({ ...todo, title, status }));
-          toast.success('Task Updated successfully');
+          toast.success('Inget.in Updated successfully');
         } else {
           toast.error('No changes made');
           return;
@@ -91,9 +91,9 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
               <FontAwesomeIcon icon={faSquareXmark} className={styles.icon} />
             </motion.div>
             <form className={styles.form} onSubmit={e => handleSubmit(e)}>
-              <h1 className={styles.formTitle}>{type === 'add' ? 'Add Mido' : 'Update Mido'}</h1>
+              <h1 className={styles.formTitle}>{type === 'add' ? 'Add Inget.in' : 'Update Inget.in'}</h1>
               <label htmlFor='title'>Title
-                <input type="text" id="title" placeholder='Mido Name..' value={title} onChange={e => setTitle(e.target.value)}  ></input>
+                <input type="text" id="title" placeholder='Inget.in Name..' value={title} onChange={e => setTitle(e.target.value)}  ></input>
               </label>
               <label htmlFor='status'>Status
                 <select name='status' id='status' value={status} onChange={e => setStatus(e.target.value)}>
@@ -102,7 +102,7 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
                 </select>
               </label>
               <div className={styles.buttonContainer}>
-                <Button> {type === 'add' ? 'Add Mido' : 'Update'}</Button>
+                <Button> {type === 'add' ? 'Add Inget.in' : 'Update Inget.in'}</Button>
                 <SecondaryButton onClick={() => setModalOpen(false)} onKeyDown={() => setModalOpen(false)}>Cancel</SecondaryButton>
               </div>
             </form>

@@ -1,146 +1,144 @@
 * {
-  -webkit-user-select: none;
-  /* Safari */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* IE10+/Edge */
-  user-select: none;
-  /* Standard */
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */
 }
 
 .item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #fff;
-  margin-bottom: 0.8rem;
-  border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    margin-bottom: 0.8rem;
+    border-radius: 4px;
 }
 
 .item:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .todoDetails {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 3px 20px;
-
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3px 20px;
 }
 
 .svgBox {
-  flex-basis: 20px;
-  margin-right: 10px;
-  flex-shrink: 0;
-  height: 20px;
-  border-radius: 2px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 5px;
-  justify-content: center;
-  padding: 6px;
-  cursor: pointer;
-  transition: 0.3s ease background-color;
+    flex-basis: 20px;
+    margin-right: 10px;
+    flex-shrink: 0;
+    height: 20px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    justify-content: center;
+    padding: 6px;
+    cursor: pointer;
+    transition: 0.3s ease background-color;
 }
 
 .svgBox:hover {
-  background-color: var(--grey-2);
+    background-color: var(--grey-2);
 }
 
 .svgBox svg {
-  width: 100%;
-  height: 100%;
-  stroke: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 100%;
+    height: 100%;
+    stroke: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .texts {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    color: #4ade80;
+    overflow: hidden;
 }
 
 .todoText {
-  word-break: break-all;
-  text-align: start;
-  font-weight: 500;
-  font-size: 0.8rem;
-  color: #a855f7;
-  line-height: 1.05;
-}
-
-.todoText--completed {
-  text-decoration: line-through;
-  opacity: 0.7;
-}
-
-.time {
-  display: block;
-  font-size: 0.6rem;
-  font-weight: 300;
-  text-align: start;
-  margin-top: -0.5rem;
-  color: gray;
-}
-
-.todoActions {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.iconEdit {
-  font-size: 1.3rem;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  padding: 4px 4px;
-  margin-right: 8px;
-  transition: 0.3s ease background-color;
-  background-color: gainsboro;
-}
-
-.iconDelete {
-  font-size: 1.3rem;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  padding: 4px 4px;
-  transition: 0.3s ease background-color;
-  background-color: gainsboro;
-}
-
-.iconDelete:hover,
-.iconEdit:hover {
-  background-color: #a855f7;
-  color: white;
-}
-
-@media (min-width: 575.98px) {
-  .todoText {
     word-break: break-all;
     text-align: start;
     font-weight: 500;
-    font-size: 1.4rem;
-    color: #a855f7;
-    line-height: 1.1;
-  }
+    font-size: 0.8rem;
+    color: #4ade80;
+    line-height: 1.05;
+}
 
-  .time {
+.todoText--completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.time {
     display: block;
-    font-size: 1rem;
+    font-size: 0.6rem;
     font-weight: 300;
     text-align: start;
     margin-top: -0.5rem;
     color: gray;
-  }
+}
+
+.todoActions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.iconEdit {
+    font-size: 1.3rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 4px 4px;
+    margin-right: 8px;
+    transition: 0.3s ease background-color;
+    background-color: gainsboro;
+}
+
+.iconDelete {
+    font-size: 1.3rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 4px 4px;
+    transition: 0.3s ease background-color;
+    background-color: gainsboro;
+}
+
+.iconDelete:hover,
+.iconEdit:hover {
+    background-color: #4ade80;
+    color: white;
+}
+
+@media (min-width: 575.98px) {
+    .todoText {
+        word-break: break-all;
+        text-align: start;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.1;
+    }
+    .time {
+        display: block;
+        font-size: 1rem;
+        font-weight: 300;
+        text-align: start;
+        margin-top: -0.5rem;
+        color: gray;
+    }
 }

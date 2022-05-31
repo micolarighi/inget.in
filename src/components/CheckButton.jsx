@@ -16,7 +16,7 @@ const checkVariants = {
 
 const boxVariants = {
   checked: {
-    backgroundColor: '#a855f7',
+    backgroundColor: '#4ade80',
     transition: { duration: 0.2 }
   },
   unchecked: {
