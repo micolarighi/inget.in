@@ -33,7 +33,7 @@ function TodoItem({ todo }) {
 
   const handleDelete = () => {
     dispatch(deleteTodo(todo.id))
-    toast.success('Mido Deleted Successfully!')
+    toast.success('Inget.in Deleted Successfully!')
   }
 
   const handleUpdate = () => {
